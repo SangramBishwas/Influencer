@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@500;600;700&display=swap');
+
+/* Shared Styles Here */
+:root {
+    --primary-color: #3A3A3A;
+    --white-color: #FFF;
+    --primary-font-size: 1rem;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 80px 120px;
+}
+
+.content-description {
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-size: var(--primary-font-size);
+    font-weight: 600;
+}
+
+.primary-btn {
+    border: none;
+    border-radius: 40px;
+    background: #E02C6D;
+    color: var(--white-color);
+    font-family: Poppins;
+    font-size: var(--primary-font-size);
+    font-weight: 700;
+    padding: 12px 24px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+/* Header styles */
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-color);
+    align-items: baseline;
+}
+
+.header-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.menu>ul {
+    display: flex;
+}
+
+.menu>ul li {
+    list-style: none;
+    margin-right: 35px;
+    font-size: var(--primary-font-size);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header-section {
+    display: flex;
+    width: ;
+    color: var(--primary-color);
+    padding: 70px;
+}
+
+.header-content{
+    width: 100%;
+}
+.header-content-title {
+    font-size: 3.25rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-content-img {
+    width: 440px;
+    height: 414px;
+    background: url(./images/Circle\ design.svg);
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        margin: 25px 10px;
+    }
+
+    .heading {
+        flex-direction: column;
+    }
+    
+    .menu>ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .header-title {
+        font-size: 1rem;
+    }
+     
+    .header-section {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+    .header-content-img{
+        width: 257px;
+        height: 257px;
+        
+    }
+    .header-content-img img{
+        width: 257px;
+        height: 257px;
+        padding: 5px;
+    }
+    .header-content-title {
+        font-size: 28px;
+    }
+}
